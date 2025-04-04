@@ -16,7 +16,7 @@
                                     <!-- SVG content -->
                                 </svg>
                             </span>
-                            <span class="app-brand-text demo text-heading fw-bold">IDAS</span>
+                            <span class="app-brand-text demo text-heading fw-bold">IDASystem</span>
                         </a>
                     </div>
                     <!-- /Logo -->

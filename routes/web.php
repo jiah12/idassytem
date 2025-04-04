@@ -17,9 +17,9 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
-Route::get('/' , function(){
-    return redirect()->route('register');
-});
+// Route::get('/' , function(){
+//     return redirect()->route('register');
+// });
 
 Auth::routes();
 
