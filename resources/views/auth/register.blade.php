@@ -20,8 +20,8 @@
                         </a>
                     </div>
                     <!-- /Logo -->
-                    <h4 class="mb-1">Adventure starts here 🚀</h4>
-                    <p class="mb-6">Make your app management easy and fun!</p>
+                    <h4 class="mb-1">Your adventure starts here 🚀</h4>
+                    <p class="mb-6">Lets explore and fun!</p>
 
                     <form method="POST" action="{{ route('register') }}" class="mb-6" id="formAuthentication">
                         @csrf
