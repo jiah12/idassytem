@@ -7,19 +7,18 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use App\Models\Role;
 use Auth;
-
-class AdminMiddleware
+class CoordinatorMiddleware
 {
     /**
      * Handle an incoming request.
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
+   public function handle(Request $request, Closure $next): Response
     {
         if(Auth::user()) {
-            $role = Role::where('id', auth()->user()->role_id)->first();
-            if($role->id == 1){
+            $role = Role::where('id', auth()->role_id)->first();
+            if($role->id == 3){
                 return $next($request);
             }
         }
@@ -27,3 +26,4 @@ class AdminMiddleware
             return redirect(url('/'));
     }
 }
+
