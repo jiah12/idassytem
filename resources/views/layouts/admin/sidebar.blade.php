@@ -4,7 +4,7 @@
       <div class="app-brand demo" style=" padding: 70px;">
         <div class="logo">
           <img style="border-radius: 500px; margin-top: 30px;" src="../../../../../assets/img/img/logo.jpg" width="100" height="100" alt="">
-            <b><p style="font-size: 26px; color: blue; text-shadow: 2px 2px 30px #00008b; ">SOS BC</p></b>
+            <b><p style="font-size: 25px; color: blue;">IDASystem</p></b>
         </div>
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
           <i class="bx bx-chevron-left bx-sm align-middle"></i>
@@ -19,6 +19,7 @@
               <div data-i18n="Analytics">Dashboard</div>
             </a>
           </li>
+          
           
         </aside>
 <!-- / Menu -->
