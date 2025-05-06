@@ -27,6 +27,7 @@ Auth::routes();
 
 Route::group(['middleware' => 'admin', 'prefix' => 'admin'], function () {
     Route::get('/', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
+    Route::get('/manage/users', [App\Http\Controllers\Admin\UserController::class, 'index'])->name('manageuser.index');
 
 });
 

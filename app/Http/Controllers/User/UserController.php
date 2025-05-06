@@ -10,14 +10,12 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    public function index()
-    {
-        $users = User::orderBy('id', 'ASC')->paginate(10);
-        return view('users.index', [
-            'users' => $users
-        ]);
-    }
+    public function index(){
+         // $user = auth()->user();
 
+         return view('users.dashboard.index');
+    }
+    
     public function create()
     {
         return view('users.create');
