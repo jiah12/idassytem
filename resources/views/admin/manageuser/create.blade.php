@@ -17,6 +17,7 @@
                 @endif
                 <form action="{{ route('users.store') }}" method="POST">
                   @csrf
+                  method('POST')
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Name" required>
