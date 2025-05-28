@@ -1,4 +1,4 @@
-@extends('layouts.admin.index')
+@extends('layouts.users.index')
 
 @section('content')
 <div class="content-wrapper">
@@ -18,7 +18,7 @@
 
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h5 class="card-title mb-0">User Table</h5>
-                    <a href="{{ route('manageuser.create') }}" class="btn btn-primary">
+                    <a href="{{ route('incidents.create') }}" class="btn btn-primary">
                         <i class="bx bx-plus"></i> Add User
                     </a>
                 </div>
@@ -34,11 +34,11 @@
                             </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
-                        @forelse($manageusers as $manageuser)
+                        @forelse($incidents as $incident)
                         <tr>
-                            <td>{{ $manageuser->fullname }}</td>
-                            <td>{{ $manageuser->email }}</td>
-                            <td>{{ $manageuser->address }}</td>
+                            <td>{{ $incidents->fullname }}</td>
+                            <td>{{ $incidents->email }}</td>
+                            <td>{{ $incidents->address }}</td>
                             <td>
                                 <div class="dropdown">
                                     <button type="button" class="btn dropdown-toggle hide-arrow" data-bs-toggle="dropdown">

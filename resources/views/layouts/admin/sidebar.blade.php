@@ -25,12 +25,7 @@
               <div data-i18n="Analytics">Manage Users</div>
             </a>
           </li>
-          <li class="menu-item active">
-            <a href="{{ route('dashboard') }}" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-home-circle"></i>
-              <div data-i18n="Analytics">Coordinators</div>
-            </a>
-          </li>
+          
           
           
         </aside>
