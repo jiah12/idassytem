@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\ManageuserController;
+use App\Http\Controllers\User\IncidentController;
+
+
 // use App\Http\Controllers\User\ManageuserController; 
 
 /*
@@ -44,7 +47,27 @@ Route::get('/manageuser/{id}', [App\Http\Controllers\Admin\ManageuserController:
 
 });
 
-Route::group(['middleware' => 'user', 'prefix' => 'user'], function () {
-    Route::get('/', [App\Http\Controllers\User\UserController::class, 'index'])->name('index');
-     Route::get('/', [App\Http\Controllers\User\UserController::class, 'index'])->name('incidents');
+// Route::prefix('users')->name('users.')->group(function () {
+    // Route::group(['middleware' => 'user', 'prefix' => 'user'], function () {
+    // Route::get('/', [App\Http\Controllers\User\UserController::class, 'index'])->name('index');
+    //  // Route::get('/', [App\Http\Controllers\User\UserController::class, 'index'])->name('incidents');
+    // // Route::resource('users/incidents', [App\Http\Controllers\User\IncidentController::class]);
+    // // Route::resource('users/incidents', [App\Http\Controllers\User\IncidentController::class, 'index'])->name('incidents.index');
+    // // Route::resource('incidents', IncidentController::class);
+    //  Route::get('/incidents', [App\Http\Controllers\User\IncidentController::class, 'index'])->name('users.incidents.index');
+    // Route::post('/incidents/create', [App\Http\Controllers\User\IncidentController::class, 'store'])->name('users.incidents.create');
+    // Route::get('users/incidents/{id}/edit', [App\Http\Controllers\User\IncidentController::class, 'edit'])->name('users.incidents.edit');
+    // Route::put('users/incidents/{id}', [App\Http\Controllers\User\IncidentController::class, 'update'])->name('users.incidents.update');
+    // Route::delete('users/incidents/{id}', [App\Http\Controllers\User\IncidentController::class, 'destroy'])->name('users.incidents.destroy');
+    // Route::get('users/incidents/{id}', [App\Http\Controllers\User\IncidentController::class, 'show'])->name('users.incidents.show');
+    //     Route::resource('users/incidents', App\Http\Controllers\User\IncidentController::class);
+    //     Route::resource('users/incidents', IncidentController::class);
+    //     Route::get('users/incidents/{id}', [IncidentController::class, 'show'])->name('users.incidents.show');
+    Route::post('user/incidents/create', [IncidentController::class, 'store']);
+
+Route::prefix('user')->name('users.')->group(function () {
+    Route::resource('incidents', IncidentController::class);
 });
+
+
+

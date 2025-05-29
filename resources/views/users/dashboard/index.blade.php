@@ -95,24 +95,6 @@
       </div>
     </div>
 
-     {{-- User Table --}}
-    <div class="card shadow-sm border-0">
-        <div class="card-body">
-            <h5 class="card-title mb-1">Recent Users</h5>
-            <div class="table-responsive">
-                <table class="table table-hover align-middle">
-                    <thead class="table-light">
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Address</th>
-                        </tr>
-                    </thead>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -20,8 +20,8 @@
             </a>
           </li>
           <li class="menu-item active">
-            <a href="{{ route('incidents') }}" class="menu-link">
+            <a href="{{ route('users.incidents.index') }}" class="menu-link">
               <i class="menu-icon tf-icons bx bx-home-circle"></i>
-              <div data-i18n="Analytics">Users</div>
+              <div data-i18n="Analytics">Reports</div>
         </aside>
 <!-- / Menu -->
